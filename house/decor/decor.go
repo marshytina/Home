@@ -61,10 +61,11 @@ func PrintHallDecor() Decor {
 		Material: "polyester",
 		Shape:    "square",
 	}
-	fmt.Println("Название предмета:", pillow.Name, "Длина предмета:", pillow.Length, "Ширина предмета:", pillow.Width, "Вес предмета:", pillow.Weight, "Цвет предмета:", pillow.Colour, "Материал:", pillow.Material, "Форма предмета:", pillow.Shape)
-	fmt.Println("Название предмета:", poof.Name, "Длина предмета:", poof.Length, "Ширина предмета:", poof.Width, "Вес предмета:", poof.Weight, "Цвет предмета:", poof.Colour, "Материал:", poof.Material, "Форма предмета:", poof.Shape)
-	fmt.Println("Название предмета:", floorLamp.Name, "Длина предмета:", floorLamp.Length, "Ширина предмета:", floorLamp.Width, "Вес предмета:", floorLamp.Weight, "Цвет предмета:", floorLamp.Colour, "Материал:", floorLamp.Material, "Форма предмета:", floorLamp.Shape)
-	fmt.Println("Название предмета:", carpet.Name, "Длина предмета:", carpet.Length, "Ширина предмета:", carpet.Width, "Вес предмета:", carpet.Weight, "Цвет предмета:", carpet.Colour, "Материал:", carpet.Material, "Форма предмета:", carpet.Shape)
-	fmt.Println("Название предмета:", bookcase.Name, "Длина предмета:", bookcase.Length, "Ширина предмета:", bookcase.Width, "Вес предмета:", bookcase.Weight, "Цвет предмета:", bookcase.Colour, "Материал:", bookcase.Material, "Форма предмета:", bookcase.Shape)
+	fmt.Println("\t\t\tДекор в основной комнате")
+	fmt.Println("\tНазвание предмета:", pillow.Name, "\nДлина предмета:", pillow.Length, "\nШирина предмета:", pillow.Width, "\nВес предмета:", pillow.Weight, "\nЦвет предмета:", pillow.Colour, "\nМатериал:", pillow.Material, "\nФорма предмета:", pillow.Shape)
+	fmt.Println("\tНазвание предмета:", poof.Name, "\nДлина предмета:", poof.Length, "\nШирина предмета:", poof.Width, "\nВес предмета:", poof.Weight, "\nЦвет предмета:", poof.Colour, "\nМатериал:", poof.Material, "\nФорма предмета:", poof.Shape)
+	fmt.Println("\tНазвание предмета:", floorLamp.Name, "\nДлина предмета:", floorLamp.Length, "\nШирина предмета:", floorLamp.Width, "\nВес предмета:", floorLamp.Weight, "\nЦвет предмета:", floorLamp.Colour, "\nМатериал:", floorLamp.Material, "\nФорма предмета:", floorLamp.Shape)
+	fmt.Println("\tНазвание предмета:", carpet.Name, "\nДлина предмета:", carpet.Length, "\nШирина предмета:", carpet.Width, "\nВес предмета:", carpet.Weight, "\nЦвет предмета:", carpet.Colour, "\nМатериал:", carpet.Material, "\nФорма предмета:", carpet.Shape)
+	fmt.Println("\tНазвание предмета:", bookcase.Name, "\nДлина предмета:", bookcase.Length, "\nШирина предмета:", bookcase.Width, "\nВес предмета:", bookcase.Weight, "\nЦвет предмета:", bookcase.Colour, "\nМатериал:", bookcase.Material, "\nФорма предмета:", bookcase.Shape)
 	return Decor{}
 }

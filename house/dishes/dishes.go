@@ -1,4 +1,4 @@
-package deshes
+package dishes
 
 import "fmt"
 
@@ -131,18 +131,19 @@ func PrintKitchenDishes() Dishes {
 		Quantity: 3,
 		Name:     "CuttingBoard",
 	}
-	fmt.Println("Название предмета:", pan.Name, "Длина предмета:", pan.Length, "Вес предмета:", pan.Weight, "Цвет предмета:", pan.Colour, "Материал:", pan.Material, "Форма предмета:", pan.Shape, "Объем:", pan.Volume, "Диаметр предмета:", pan.Diameter, "Страна производитель:", pan.Country, "Гарантия:", pan.Guarantee, "Количество:", pan.Quantity)
-	fmt.Println("Название предмета:", pot.Name, "Длина предмета:", pot.Length, "Вес предмета:", pot.Weight, "Цвет предмета:", pot.Colour, "Материал:", pot.Material, "Форма предмета:", pot.Shape, "Объем:", pot.Volume, "Диаметр предмета:", pot.Diameter, "Страна производитель:", pot.Country, "Гарантия:", pot.Guarantee, "Количество:", pot.Quantity)
-	fmt.Println("Название предмета:", flatPlate.Name, "Вес предмета:", flatPlate.Weight, "Цвет предмета:", flatPlate.Colour, "Материал:", flatPlate.Material, "Форма предмета:", flatPlate.Shape, "Диаметр предмета:", flatPlate.Diameter, "Количество:", pot.Quantity)
-	fmt.Println("Название предмета:", soupPlate.Name, "Вес предмета:", soupPlate.Weight, "Цвет предмета:", soupPlate.Colour, "Материал:", soupPlate.Material, "Форма предмета:", soupPlate.Shape, "Объем:", soupPlate.Volume, "Диаметр предмета:", soupPlate.Diameter, "Количество:", soupPlate.Quantity)
-	fmt.Println("Название предмета:", mug.Name, "Вес предмета:", mug.Weight, "Цвет предмета:", mug.Colour, "Материал:", mug.Material, "Объем:", mug.Volume, "Диаметр предмета:", mug.Diameter, "Количество:", mug.Quantity)
-	fmt.Println("Название предмета:", soupPlate.Name, "Вес предмета:", soupPlate.Weight, "Цвет предмета:", soupPlate.Colour, "Материал:", soupPlate.Material, "Форма предмета:", soupPlate.Shape, "Объем:", soupPlate.Volume, "Диаметр предмета:", soupPlate.Diameter, "Количество:", soupPlate.Quantity)
-	fmt.Println("Название предмета:", wineGlass.Name, "Вес предмета:", wineGlass.Weight, "Цвет предмета:", wineGlass.Colour, "Материал:", wineGlass.Material, "Форма предмета:", wineGlass.Shape, "Объем:", wineGlass.Volume, "Диаметр предмета:", wineGlass.Diameter, "Количество:", wineGlass.Quantity)
-	fmt.Println("Название предмета:", fork.Name, "Длина предмета:", fork.Length, "Вес предмета:", fork.Weight, "Цвет предмета:", fork.Colour, "Материал:", fork.Material, "Количество:", fork.Quantity)
-	fmt.Println("Название предмета:", spoon.Name, "Вес предмета:", spoon.Weight, "Цвет предмета:", spoon.Colour, "Материал:", spoon.Material, "Длина предмета:", spoon.Length, "Количество:", spoon.Quantity)
-	fmt.Println("Название предмета:", dessertSpoon.Name, "Вес предмета:", dessertSpoon.Weight, "Цвет предмета:", dessertSpoon.Colour, "Материал:", dessertSpoon.Material, "Длина предмета:", dessertSpoon.Length, "Объем:", "Количество:", dessertSpoon.Quantity)
-	fmt.Println("Название предмета:", knife.Name, "Вес предмета:", knife.Weight, "Цвет предмета:", knife.Colour, "Материал:", knife.Material, "Длина предмета:", knife.Length, "Количество:", knife.Quantity)
-	fmt.Println("Название предмета:", spatula.Name, "Вес предмета:", spatula.Weight, "Цвет предмета:", spatula.Colour, "Материал:", spatula.Material, "Длина предмета:", spatula.Length, "Объем:", "Количество:", spatula.Quantity)
-	fmt.Println("Название предмета:", cuttingBoard.Name, "Вес предмета:", cuttingBoard.Weight, "Цвет предмета:", cuttingBoard.Colour, "Материал:", cuttingBoard.Material, "Длина предмета:", cuttingBoard.Length, "Количество:", cuttingBoard.Quantity)
+	fmt.Println("\t\t\tПосуда и кухонные приборы")
+	fmt.Println("\tНазвание предмета:", pan.Name, "\nДлина предмета:", pan.Length, "\nВес предмета:", pan.Weight, "\nЦвет предмета:", pan.Colour, "\nМатериал:", pan.Material, "\nФорма предмета:", pan.Shape, "\nОбъем:", pan.Volume, "\nДиаметр предмета:", pan.Diameter, "\nСтрана производитель:", pan.Country, "\nГарантия:", pan.Guarantee, "\nКоличество:", pan.Quantity)
+	fmt.Println("\tНазвание предмета:", pot.Name, "\nДлина предмета:", pot.Length, "\nВес предмета:", pot.Weight, "\nЦвет предмета:", pot.Colour, "\nМатериал:", pot.Material, "\nФорма предмета:", pot.Shape, "\nОбъем:", pot.Volume, "\nДиаметр предмета:", pot.Diameter, "\nСтрана производитель:", pot.Country, "\nГарантия:", pot.Guarantee, "\nКоличество:", pot.Quantity)
+	fmt.Println("\tНазвание предмета:", flatPlate.Name, "\nВес предмета:", flatPlate.Weight, "\nЦвет предмета:", flatPlate.Colour, "\nМатериал:", flatPlate.Material, "\nФорма предмета:", flatPlate.Shape, "\nДиаметр предмета:", flatPlate.Diameter, "\nКоличество:", pot.Quantity)
+	fmt.Println("\tНазвание предмета:", soupPlate.Name, "\nВес предмета:", soupPlate.Weight, "\nЦвет предмета:", soupPlate.Colour, "\nМатериал:", soupPlate.Material, "\nФорма предмета:", soupPlate.Shape, "\nОбъем:", soupPlate.Volume, "\nДиаметр предмета:", soupPlate.Diameter, "\nКоличество:", soupPlate.Quantity)
+	fmt.Println("\tНазвание предмета:", mug.Name, "\nВес предмета:", mug.Weight, "\nЦвет предмета:", mug.Colour, "\nМатериал:", mug.Material, "\nОбъем:", mug.Volume, "\nДиаметр предмета:", mug.Diameter, "\nКоличество:", mug.Quantity)
+	fmt.Println("\tНазвание предмета:", soupPlate.Name, "\nВес предмета:", soupPlate.Weight, "\nЦвет предмета:", soupPlate.Colour, "\nМатериал:", soupPlate.Material, "\nФорма предмета:", soupPlate.Shape, "\nОбъем:", soupPlate.Volume, "\nДиаметр предмета:", soupPlate.Diameter, "\nКоличество:", soupPlate.Quantity)
+	fmt.Println("\tНазвание предмета:", wineGlass.Name, "\nВес предмета:", wineGlass.Weight, "\nЦвет предмета:", wineGlass.Colour, "\nМатериал:", wineGlass.Material, "\nФорма предмета:", wineGlass.Shape, "\nОбъем:", wineGlass.Volume, "\nДиаметр предмета:", wineGlass.Diameter, "\nКоличество:", wineGlass.Quantity)
+	fmt.Println("\tНазвание предмета:", fork.Name, "\nДлина предмета:", fork.Length, "\nВес предмета:", fork.Weight, "\nЦвет предмета:", fork.Colour, "\nМатериал:", fork.Material, "\nКоличество:", fork.Quantity)
+	fmt.Println("\tНазвание предмета:", spoon.Name, "\nВес предмета:", spoon.Weight, "\nЦвет предмета:", spoon.Colour, "\nМатериал:", spoon.Material, "\nДлина предмета:", spoon.Length, "\nКоличество:", spoon.Quantity)
+	fmt.Println("\tНазвание предмета:", dessertSpoon.Name, "\nВес предмета:", dessertSpoon.Weight, "\nЦвет предмета:", dessertSpoon.Colour, "\nМатериал:", dessertSpoon.Material, "\nДлина предмета:", dessertSpoon.Length, "\nКоличество:", dessertSpoon.Quantity)
+	fmt.Println("\tНазвание предмета:", knife.Name, "\nВес предмета:", knife.Weight, "\nЦвет предмета:", knife.Colour, "\nМатериал:", knife.Material, "\nДлина предмета:", knife.Length, "\nКоличество:", knife.Quantity)
+	fmt.Println("\tНазвание предмета:", spatula.Name, "\nВес предмета:", spatula.Weight, "\nЦвет предмета:", spatula.Colour, "\nМатериал:", spatula.Material, "\nДлина предмета:", spatula.Length, "\nКоличество:", spatula.Quantity)
+	fmt.Println("\tНазвание предмета:", cuttingBoard.Name, "\nВес предмета:", cuttingBoard.Weight, "\nЦвет предмета:", cuttingBoard.Colour, "\nМатериал:", cuttingBoard.Material, "\nДлина предмета:", cuttingBoard.Length, "\nКоличество:", cuttingBoard.Quantity)
 	return Dishes{}
 }
