@@ -1,4 +1,4 @@
-package main
+package deshes
 
 import "fmt"
 
@@ -17,7 +17,7 @@ type Dishes struct {
 	Quantity  int
 }
 
-func PrintDishes() Dishes {
+func PrintKitchenDishes() Dishes {
 	fmt.Println("Вся посуда имеющаяся в доме:")
 	pan := Dishes{
 		Length:    27,

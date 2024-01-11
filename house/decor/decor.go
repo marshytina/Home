@@ -1,4 +1,4 @@
-package main
+package decor
 
 import "fmt"
 
@@ -15,8 +15,7 @@ type Decor struct {
 	Diameter int
 }
 
-func PrintDecor() Decor {
-	fmt.Println("Вecь декор имеющийся в доме:")
+func PrintHallDecor() Decor {
 	floorLamp := Decor{
 		Name:     "FloorLamp",
 		Height:   170,

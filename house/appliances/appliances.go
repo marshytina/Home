@@ -1,6 +1,8 @@
-package main
+package appliances
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Appliances struct { //бытовая техника
 	Length    int
@@ -14,7 +16,7 @@ type Appliances struct { //бытовая техника
 	Country   string
 }
 
-func PrintAppliances() Appliances {
+func PrintBathroomAppliances() Appliances {
 	fmt.Println("Вся бытовая техника имеющаяся в доме:")
 	washingMachine := Appliances{
 		Height:    85,
@@ -53,6 +55,14 @@ func PrintAppliances() Appliances {
 		Colour:    "black",
 		Guarantee: 2,
 		Country:   "China"}
+	fmt.Println("Название предмета:", washingMachine.Name, "Высота предмета:", washingMachine.Height, "Ширина предмета:", washingMachine.Width, "Глубина предмета:", washingMachine.Depth, "Вес предмета:", washingMachine.Weight, "Цвет предмета:", washingMachine.Colour, "Гарантия:", washingMachine.Guarantee, "Страна производитель:", washingMachine.Country)
+	fmt.Println("Название предмета:", electricShaver.Name, "Высота предмета:", electricShaver.Height, "Ширина предмета:", electricShaver.Width, "Глубина предмета:", electricShaver.Depth, "Вес предмета:", electricShaver.Weight, "Цвет предмета:", electricShaver.Colour, "Гарантия:", electricShaver.Guarantee, "Страна производитель:", electricShaver.Country)
+	fmt.Println("Название предмета:", electricToothBrush.Name, "Высота предмета:", electricToothBrush.Height, "Ширина предмета:", electricToothBrush.Width, "Глубина предмета:", electricToothBrush.Depth, "Вес предмета:", electricToothBrush.Weight, "Цвет предмета:", electricToothBrush.Colour, "Гарантия:", electricToothBrush.Guarantee, "Страна производитель:", electricToothBrush.Country)
+	fmt.Println("Название предмета:", hairDryer.Name, "Высота предмета:", hairDryer.Height, "Ширина предмета:", hairDryer.Width, "Глубина предмета:", hairDryer.Depth, "Вес предмета:", hairDryer.Weight, "Цвет предмета:", hairDryer.Colour, "Гарантия:", hairDryer.Guarantee, "Страна производитель:", hairDryer.Country)
+	fmt.Println("Название предмета:", curlingIron.Name, "Высота предмета:", curlingIron.Height, "Ширина предмета:", curlingIron.Width, "Глубина предмета:", curlingIron.Depth, "Вес предмета:", curlingIron.Weight, "Цвет предмета:", curlingIron.Colour, "Гарантия:", curlingIron.Guarantee, "Страна производитель:", curlingIron.Country)
+	return Appliances{}
+}
+func PrintHallAppliances() Appliances {
 	tv := Appliances{
 		Height:    71,
 		Width:     122,
@@ -100,6 +110,14 @@ func PrintAppliances() Appliances {
 		Guarantee: 1,
 		Country:   "China",
 	}
+	fmt.Println("Название предмета:", musicCentre.Name, "Высота предмета:", musicCentre.Height, "Ширина предмета:", musicCentre.Width, "Глубина предмета:", musicCentre.Depth, "Вес предмета:", musicCentre.Weight, "Цвет предмета:", musicCentre.Colour, "Гарантия:", musicCentre.Guarantee, "Страна производитель:", musicCentre.Country)
+	fmt.Println("Название предмета:", laptop.Name, "Высота предмета:", laptop.Height, "Ширина предмета:", laptop.Width, "Глубина предмета:", laptop.Depth, "Вес предмета:", laptop.Weight, "Цвет предмета:", laptop.Colour, "Гарантия:", laptop.Guarantee, "Страна производитель:", laptop.Country)
+	fmt.Println("Название предмета:", airConditioner.Name, "Высота предмета:", airConditioner.Height, "Ширина предмета:", airConditioner.Width, "Глубина предмета:", airConditioner.Depth, "Вес предмета:", airConditioner.Weight, "Цвет предмета:", airConditioner.Colour, "Гарантия:", airConditioner.Guarantee, "Страна производитель:", airConditioner.Country)
+	fmt.Println("Название предмета:", tv.Name, "Высота предмета:", tv.Height, "Ширина предмета:", tv.Width, "Глубина предмета:", tv.Depth, "Вес предмета:", tv.Weight, "Цвет предмета:", tv.Colour, "Гарантия:", tv.Guarantee, "Страна производитель:", tv.Country)
+	fmt.Println("Название предмета:", ps5.Name, "Высота предмета:", ps5.Height, "Ширина предмета:", ps5.Width, "Глубина предмета:", ps5.Depth, "Вес предмета:", ps5.Weight, "Цвет предмета:", ps5.Colour, "Гарантия:", ps5.Guarantee, "Страна производитель:", ps5.Country)
+	return Appliances{}
+}
+func PrintKitchenAppliances() Appliances {
 	dishwasher := Appliances{
 		Height:    89,
 		Width:     64,
@@ -170,19 +188,9 @@ func PrintAppliances() Appliances {
 		Guarantee: 1,
 		Country:   "China",
 	}
-	fmt.Println("Название предмета:", washingMachine.Name, "Высота предмета:", washingMachine.Height, "Ширина предмета:", washingMachine.Width, "Глубина предмета:", washingMachine.Depth, "Вес предмета:", washingMachine.Weight, "Цвет предмета:", washingMachine.Colour, "Гарантия:", washingMachine.Guarantee, "Страна производитель:", washingMachine.Country)
-	fmt.Println("Название предмета:", electricShaver.Name, "Высота предмета:", electricShaver.Height, "Ширина предмета:", electricShaver.Width, "Глубина предмета:", electricShaver.Depth, "Вес предмета:", electricShaver.Weight, "Цвет предмета:", electricShaver.Colour, "Гарантия:", electricShaver.Guarantee, "Страна производитель:", electricShaver.Country)
 	fmt.Println("Название предмета:", electricStove.Name, "Высота предмета:", electricStove.Height, "Ширина предмета:", electricStove.Width, "Глубина предмета:", electricStove.Depth, "Вес предмета:", electricStove.Weight, "Цвет предмета:", electricStove.Colour, "Гарантия:", electricStove.Guarantee, "Страна производитель:", electricStove.Country)
-	fmt.Println("Название предмета:", electricToothBrush.Name, "Высота предмета:", electricToothBrush.Height, "Ширина предмета:", electricToothBrush.Width, "Глубина предмета:", electricToothBrush.Depth, "Вес предмета:", electricToothBrush.Weight, "Цвет предмета:", electricToothBrush.Colour, "Гарантия:", electricToothBrush.Guarantee, "Страна производитель:", electricToothBrush.Country)
 	fmt.Println("Название предмета:", mixer.Name, "Высота предмета:", mixer.Height, "Ширина предмета:", mixer.Width, "Глубина предмета:", mixer.Depth, "Вес предмета:", mixer.Weight, "Цвет предмета:", mixer.Colour, "Гарантия:", mixer.Guarantee, "Страна производитель:", mixer.Country)
 	fmt.Println("Название предмета:", multicooker.Name, "Высота предмета:", multicooker.Height, "Ширина предмета:", multicooker.Width, "Глубина предмета:", multicooker.Depth, "Вес предмета:", multicooker.Weight, "Цвет предмета:", multicooker.Colour, "Гарантия:", multicooker.Guarantee, "Страна производитель:", multicooker.Country)
-	fmt.Println("Название предмета:", musicCentre.Name, "Высота предмета:", musicCentre.Height, "Ширина предмета:", musicCentre.Width, "Глубина предмета:", musicCentre.Depth, "Вес предмета:", musicCentre.Weight, "Цвет предмета:", musicCentre.Colour, "Гарантия:", musicCentre.Guarantee, "Страна производитель:", musicCentre.Country)
-	fmt.Println("Название предмета:", hairDryer.Name, "Высота предмета:", hairDryer.Height, "Ширина предмета:", hairDryer.Width, "Глубина предмета:", hairDryer.Depth, "Вес предмета:", hairDryer.Weight, "Цвет предмета:", hairDryer.Colour, "Гарантия:", hairDryer.Guarantee, "Страна производитель:", hairDryer.Country)
-	fmt.Println("Название предмета:", laptop.Name, "Высота предмета:", laptop.Height, "Ширина предмета:", laptop.Width, "Глубина предмета:", laptop.Depth, "Вес предмета:", laptop.Weight, "Цвет предмета:", laptop.Colour, "Гарантия:", laptop.Guarantee, "Страна производитель:", laptop.Country)
-	fmt.Println("Название предмета:", airConditioner.Name, "Высота предмета:", airConditioner.Height, "Ширина предмета:", airConditioner.Width, "Глубина предмета:", airConditioner.Depth, "Вес предмета:", airConditioner.Weight, "Цвет предмета:", airConditioner.Colour, "Гарантия:", airConditioner.Guarantee, "Страна производитель:", airConditioner.Country)
-	fmt.Println("Название предмета:", tv.Name, "Высота предмета:", tv.Height, "Ширина предмета:", tv.Width, "Глубина предмета:", tv.Depth, "Вес предмета:", tv.Weight, "Цвет предмета:", tv.Colour, "Гарантия:", tv.Guarantee, "Страна производитель:", tv.Country)
-	fmt.Println("Название предмета:", ps5.Name, "Высота предмета:", ps5.Height, "Ширина предмета:", ps5.Width, "Глубина предмета:", ps5.Depth, "Вес предмета:", ps5.Weight, "Цвет предмета:", ps5.Colour, "Гарантия:", ps5.Guarantee, "Страна производитель:", ps5.Country)
-	fmt.Println("Название предмета:", curlingIron.Name, "Высота предмета:", curlingIron.Height, "Ширина предмета:", curlingIron.Width, "Глубина предмета:", curlingIron.Depth, "Вес предмета:", curlingIron.Weight, "Цвет предмета:", curlingIron.Colour, "Гарантия:", curlingIron.Guarantee, "Страна производитель:", curlingIron.Country)
 	fmt.Println("Название предмета:", coffemachine.Name, "Высота предмета:", coffemachine.Height, "Ширина предмета:", coffemachine.Width, "Глубина предмета:", coffemachine.Depth, "Вес предмета:", coffemachine.Weight, "Цвет предмета:", coffemachine.Colour, "Гарантия:", coffemachine.Guarantee, "Страна производитель:", coffemachine.Country)
 	fmt.Println("Название предмета:", dishwasher.Name, "Высота предмета:", dishwasher.Height, "Ширина предмета:", dishwasher.Width, "Глубина предмета:", dishwasher.Depth, "Вес предмета:", dishwasher.Weight, "Цвет предмета:", dishwasher.Colour, "Гарантия:", dishwasher.Guarantee, "Страна производитель:", dishwasher.Country)
 	fmt.Println("Название предмета:", kettle.Name, "Высота предмета:", kettle.Height, "Ширина предмета:", kettle.Width, "Глубина предмета:", kettle.Depth, "Вес предмета:", kettle.Weight, "Цвет предмета:", kettle.Colour, "Гарантия:", kettle.Guarantee, "Страна производитель:", kettle.Country)
