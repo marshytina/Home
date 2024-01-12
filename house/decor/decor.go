@@ -13,6 +13,7 @@ type Decor struct {
 	Material string
 	Shape    string
 	Diameter int
+	Style    bool
 }
 
 func PrintHallDecor() Decor {
@@ -24,6 +25,7 @@ func PrintHallDecor() Decor {
 		Weight:   6.4,
 		Colour:   "transparent",
 		Material: "glass",
+		Style:    true,
 	}
 	carpet := Decor{
 		Name:     "Carpet",
@@ -33,6 +35,7 @@ func PrintHallDecor() Decor {
 		Weight:   6.4,
 		Colour:   "grey",
 		Material: "pile",
+		Style:    true,
 	}
 	bookcase := Decor{
 		Name:     "Bookcase",
@@ -42,6 +45,7 @@ func PrintHallDecor() Decor {
 		Weight:   21.74,
 		Colour:   "white",
 		Material: "wood",
+		Style:    true,
 	}
 	poof := Decor{
 		Name:     "Poof",
@@ -51,6 +55,7 @@ func PrintHallDecor() Decor {
 		Colour:   "biege",
 		Diameter: 40,
 		Shape:    "circle",
+		Style:    false,
 	}
 	pillow := Decor{
 		Name:     "Pillow",
@@ -60,6 +65,7 @@ func PrintHallDecor() Decor {
 		Colour:   "silver",
 		Material: "polyester",
 		Shape:    "square",
+		Style:    false,
 	}
 	fmt.Println("\t\t\tДекор в основной комнате")
 	fmt.Println("\tНазвание предмета:", pillow.Name, "\nДлина предмета:", pillow.Length, "\nШирина предмета:", pillow.Width, "\nВес предмета:", pillow.Weight, "\nЦвет предмета:", pillow.Colour, "\nМатериал:", pillow.Material, "\nФорма предмета:", pillow.Shape)
@@ -68,4 +74,70 @@ func PrintHallDecor() Decor {
 	fmt.Println("\tНазвание предмета:", carpet.Name, "\nДлина предмета:", carpet.Length, "\nШирина предмета:", carpet.Width, "\nВес предмета:", carpet.Weight, "\nЦвет предмета:", carpet.Colour, "\nМатериал:", carpet.Material, "\nФорма предмета:", carpet.Shape)
 	fmt.Println("\tНазвание предмета:", bookcase.Name, "\nДлина предмета:", bookcase.Length, "\nШирина предмета:", bookcase.Width, "\nВес предмета:", bookcase.Weight, "\nЦвет предмета:", bookcase.Colour, "\nМатериал:", bookcase.Material, "\nФорма предмета:", bookcase.Shape)
 	return Decor{}
+}
+func PrintBedroomDecor() Decor {
+	lamp := Decor{
+		Name:     "Lamp",
+		Height:   40,
+		Width:    15,
+		Depth:    10,
+		Weight:   2,
+		Colour:   "transparent",
+		Material: "glass",
+		Style:    true,
+	}
+	picture := Decor{
+		Name:     "Picture",
+		Length:   50,
+		Width:    80,
+		Depth:    0,
+		Weight:   3,
+		Colour:   "black",
+		Material: "wood",
+		Style:    true,
+	}
+	statuette := Decor{
+		Name:     "Statuette",
+		Length:   30,
+		Width:    50,
+		Depth:    20,
+		Weight:   21.74,
+		Colour:   "white",
+		Material: "gypsum",
+		Style:    true,
+	}
+	photo := Decor{
+		Name:     "Photo",
+		Height:   20,
+		Width:    15,
+		Depth:    0,
+		Weight:   1,
+		Colour:   "multicoloured",
+		Material: "glass",
+		Style:    true,
+	}
+	candles := Decor{
+		Name:     "Candles",
+		Height:   10,
+		Width:    8,
+		Depth:    0,
+		Weight:   1,
+		Colour:   "multicoloured",
+		Material: "wax",
+		Style:    true,
+	}
+	fmt.Println("\t\t\tДекор в спальне")
+	fmt.Println("\tНазвание предмета:", photo.Name, "\nДлина предмета:", photo.Length, "\nШирина предмета:", photo.Width, "\nВес предмета:", photo.Weight, "\nЦвет предмета:", photo.Colour, "\nМатериал:", photo.Material, "\nФорма предмета:", photo.Shape)
+	fmt.Println("\tНазвание предмета:", picture.Name, "\nДлина предмета:", picture.Length, "\nШирина предмета:", picture.Width, "\nВес предмета:", picture.Weight, "\nЦвет предмета:", picture.Colour, "\nМатериал:", picture.Material, "\nФорма предмета:", picture.Shape)
+	fmt.Println("\tНазвание предмета:", statuette.Name, "\nДлина предмета:", statuette.Length, "\nШирина предмета:", statuette.Width, "\nВес предмета:", statuette.Weight, "\nЦвет предмета:", statuette.Colour, "\nМатериал:", statuette.Material, "\nФорма предмета:", statuette.Shape)
+	fmt.Println("\tНазвание предмета:", lamp.Name, "\nДлина предмета:", lamp.Length, "\nШирина предмета:", lamp.Width, "\nВес предмета:", lamp.Weight, "\nЦвет предмета:", lamp.Colour, "\nМатериал:", lamp.Material, "\nФорма предмета:", lamp.Shape)
+	fmt.Println("\tНазвание предмета:", candles.Name, "\nДлина предмета:", candles.Length, "\nШирина предмета:", candles.Width, "\nВес предмета:", candles.Weight, "\nЦвет предмета:", candles.Colour, "\nМатериал:", candles.Material, "\nФорма предмета:", candles.Shape)
+	return Decor{}
+}
+func (d Decor) StyleMatch() {
+	if d.Style {
+		fmt.Println(d.Name, "подходит к общему стилю дома")
+	} else {
+		fmt.Println(d.Name, "не подходит к общему стилю дома")
+	}
 }

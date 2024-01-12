@@ -93,6 +93,53 @@ func PrintHallFirnuture() Furniture {
 	fmt.Println("\tНазвание предмета:", chandelier.Name, "\nВес предмета:", chandelier.Weight, "\nЦвет предмета:", chandelier.Colour, "\nМатериал:", chandelier.Material, "\nДлина предмета:", chandelier.Height, "\nШирина предмета:", chandelier.Width, "\nГлубина предмета:", chandelier.Depth)
 	return Furniture{}
 }
+func PrintBedroomFurniture() Furniture {
+	worktable := Furniture{
+		Name:     "Table",
+		Height:   50,
+		Width:    90,
+		Depth:    0,
+		Weight:   14.5,
+		Colour:   "white",
+		Material: "wood",
+		Shape:    "square"}
+	armchair := Furniture{
+		Name:     "Armhair",
+		Height:   70,
+		Width:    50,
+		Depth:    0,
+		Weight:   5,
+		Colour:   "white",
+		Material: "wood",
+		Shape:    "rectangular",
+	}
+	bed := Furniture{
+		Name:     "Bed",
+		Height:   75,
+		Width:    150,
+		Depth:    60,
+		Weight:   45,
+		Colour:   "white",
+		Material: "wood",
+		Shape:    "rectangular",
+	}
+	wardrobe := Furniture{
+		Name:     "Wardrobe",
+		Height:   180,
+		Width:    90,
+		Depth:    40,
+		Weight:   60,
+		Colour:   "white",
+		Material: "wood",
+		Shape:    "rectangular",
+	}
+	fmt.Println("\t\t\tМебель в спальне")
+	fmt.Println("\tНазвание предмета:", armchair.Name, "\nВес предмета:", armchair.Weight, "\nЦвет предмета:", armchair.Colour, "\nМатериал:", armchair.Material, "\nДлина предмета:", armchair.Height, "\nШирина предмета:", armchair.Width, "\nГлубина предмета:", armchair.Depth)
+	fmt.Println("\tНазвание предмета:", wardrobe.Name, "\nВес предмета:", wardrobe.Weight, "\nЦвет предмета:", wardrobe.Colour, "\nМатериал:", wardrobe.Material, "\nДлина предмета:", wardrobe.Height, "\nШирина предмета:", wardrobe.Width, "\nГлубина предмета:", wardrobe.Depth)
+	fmt.Println("\tНазвание предмета:", worktable.Name, "\nВес предмета:", worktable.Weight, "\nЦвет предмета:", worktable.Colour, "\nМатериал:", worktable.Material, "\nДлина предмета:", worktable.Height, "\nШирина предмета:", worktable.Width, "\nГлубина предмета:", worktable.Depth)
+	fmt.Println("\tНазвание предмета:", bed.Name, "\nВес предмета:", bed.Weight, "\nЦвет предмета:", bed.Colour, "\nМатериал:", bed.Material, "\nДлина предмета:", bed.Height, "\nШирина предмета:", bed.Width, "\nГлубина предмета:", bed.Depth)
+	return Furniture{}
+}
 func PrintBathroomFurniture() Furniture {
 	bath := Furniture{
 		Name:     "Bath",
