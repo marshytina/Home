@@ -1,6 +1,7 @@
 test:
-	@echo'Мы сделали Makefile'
+	@echo 'Мы сделали Makefile'
 up:
-	#скачать git bash
+	docker-compose up --build Home
+stop:
+docker-compose stop
 
-#скачать git bush
