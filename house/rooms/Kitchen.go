@@ -2,15 +2,15 @@ package rooms
 
 import (
 	"fmt"
-	"house/appliances"
-	"house/dishes"
+	"house/house/appliances"
+	"house/house/dishes"
 )
 
 func PrintKitchen() Rooms {
 	kitchen := Rooms{
 		Name:    "Kitchen",
 		Length:  7,
-		Width:   10,
+		Width:   8,
 		Windows: 2,
 	}
 

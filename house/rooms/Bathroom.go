@@ -2,16 +2,16 @@ package rooms
 
 import (
 	"fmt"
-	"house/accessories"
-	"house/appliances"
-	"house/furniture"
+	"house/house/accessories"
+	"house/house/appliances"
+	"house/house/furniture"
 )
 
 func PrintBathroom() Rooms {
 	bathroom := Rooms{
 		Name:    "Bathroom",
 		Length:  5,
-		Width:   8,
+		Width:   3,
 		Windows: 1,
 	}
 	fmt.Println("\tНазвание комнаты:", bathroom.Name)

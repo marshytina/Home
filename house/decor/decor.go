@@ -16,6 +16,13 @@ type Decor struct {
 	Style    bool
 }
 
+func (d Decor) StyleMatch() {
+	if d.Style {
+		fmt.Println(d.Name, "подходит к общему стилю дома")
+	} else {
+		fmt.Println(d.Name, "не подходит к общему стилю дома")
+	}
+}
 func PrintHallDecor() Decor {
 	floorLamp := Decor{
 		Name:     "FloorLamp",
@@ -69,10 +76,13 @@ func PrintHallDecor() Decor {
 	}
 	fmt.Println("\t\t\tДекор в основной комнате")
 	fmt.Println("\tНазвание предмета:", pillow.Name, "\nДлина предмета:", pillow.Length, "\nШирина предмета:", pillow.Width, "\nВес предмета:", pillow.Weight, "\nЦвет предмета:", pillow.Colour, "\nМатериал:", pillow.Material, "\nФорма предмета:", pillow.Shape)
+	Decor.StyleMatch(pillow)
 	fmt.Println("\tНазвание предмета:", poof.Name, "\nДлина предмета:", poof.Length, "\nШирина предмета:", poof.Width, "\nВес предмета:", poof.Weight, "\nЦвет предмета:", poof.Colour, "\nМатериал:", poof.Material, "\nФорма предмета:", poof.Shape)
 	fmt.Println("\tНазвание предмета:", floorLamp.Name, "\nДлина предмета:", floorLamp.Length, "\nШирина предмета:", floorLamp.Width, "\nВес предмета:", floorLamp.Weight, "\nЦвет предмета:", floorLamp.Colour, "\nМатериал:", floorLamp.Material, "\nФорма предмета:", floorLamp.Shape)
+	Decor.StyleMatch(floorLamp)
 	fmt.Println("\tНазвание предмета:", carpet.Name, "\nДлина предмета:", carpet.Length, "\nШирина предмета:", carpet.Width, "\nВес предмета:", carpet.Weight, "\nЦвет предмета:", carpet.Colour, "\nМатериал:", carpet.Material, "\nФорма предмета:", carpet.Shape)
 	fmt.Println("\tНазвание предмета:", bookcase.Name, "\nДлина предмета:", bookcase.Length, "\nШирина предмета:", bookcase.Width, "\nВес предмета:", bookcase.Weight, "\nЦвет предмета:", bookcase.Colour, "\nМатериал:", bookcase.Material, "\nФорма предмета:", bookcase.Shape)
+	Decor.StyleMatch(bookcase)
 	return Decor{}
 }
 func PrintBedroomDecor() Decor {
@@ -129,15 +139,10 @@ func PrintBedroomDecor() Decor {
 	fmt.Println("\t\t\tДекор в спальне")
 	fmt.Println("\tНазвание предмета:", photo.Name, "\nДлина предмета:", photo.Length, "\nШирина предмета:", photo.Width, "\nВес предмета:", photo.Weight, "\nЦвет предмета:", photo.Colour, "\nМатериал:", photo.Material, "\nФорма предмета:", photo.Shape)
 	fmt.Println("\tНазвание предмета:", picture.Name, "\nДлина предмета:", picture.Length, "\nШирина предмета:", picture.Width, "\nВес предмета:", picture.Weight, "\nЦвет предмета:", picture.Colour, "\nМатериал:", picture.Material, "\nФорма предмета:", picture.Shape)
+	Decor.StyleMatch(picture)
 	fmt.Println("\tНазвание предмета:", statuette.Name, "\nДлина предмета:", statuette.Length, "\nШирина предмета:", statuette.Width, "\nВес предмета:", statuette.Weight, "\nЦвет предмета:", statuette.Colour, "\nМатериал:", statuette.Material, "\nФорма предмета:", statuette.Shape)
 	fmt.Println("\tНазвание предмета:", lamp.Name, "\nДлина предмета:", lamp.Length, "\nШирина предмета:", lamp.Width, "\nВес предмета:", lamp.Weight, "\nЦвет предмета:", lamp.Colour, "\nМатериал:", lamp.Material, "\nФорма предмета:", lamp.Shape)
+	Decor.StyleMatch(lamp)
 	fmt.Println("\tНазвание предмета:", candles.Name, "\nДлина предмета:", candles.Length, "\nШирина предмета:", candles.Width, "\nВес предмета:", candles.Weight, "\nЦвет предмета:", candles.Colour, "\nМатериал:", candles.Material, "\nФорма предмета:", candles.Shape)
 	return Decor{}
-}
-func (d Decor) StyleMatch() {
-	if d.Style {
-		fmt.Println(d.Name, "подходит к общему стилю дома")
-	} else {
-		fmt.Println(d.Name, "не подходит к общему стилю дома")
-	}
 }

@@ -12,5 +12,6 @@ func PrintRoom() Rooms {
 	PrintBathroom()
 	PrintHall()
 	PrintKitchen()
+	PrintBedroom()
 	return Rooms{}
 }

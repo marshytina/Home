@@ -34,16 +34,6 @@ func PrintHallFirnuture() Furniture {
 		Material: "plastic",
 		Shape:    "rectangular",
 	}
-	chandelier := Furniture{
-		Name:     "Chandelier",
-		Height:   65,
-		Width:    48,
-		Depth:    48,
-		Weight:   2.2,
-		Colour:   "white",
-		Material: "glass",
-		Shape:    "author's",
-	}
 	dresser := Furniture{
 		Name:     "Dresser",
 		Height:   80,
@@ -74,23 +64,12 @@ func PrintHallFirnuture() Furniture {
 		Material: "wood",
 		Shape:    "rectangular",
 	}
-	armchair := Furniture{
-		Name:     "Armchair",
-		Height:   83,
-		Width:    45,
-		Depth:    0,
-		Weight:   9,
-		Colour:   "black",
-		Material: "flock",
-	}
 	fmt.Println("\t\t\tМебель в основной комнате")
-	fmt.Println("\tНазвание предмета:", armchair.Name, "\nВес предмета:", armchair.Weight, "\nЦвет предмета:", armchair.Colour, "\nМатериал:", armchair.Material, "\nДлина предмета:", armchair.Height, "\nШирина предмета:", armchair.Width, "\nГлубина предмета:", armchair.Depth)
 	fmt.Println("\tНазвание предмета:", closet.Name, "\nВес предмета:", closet.Weight, "\nЦвет предмета:", closet.Colour, "\nМатериал:", closet.Material, "\nДлина предмета:", closet.Height, "\nШирина предмета:", closet.Width, "\nГлубина предмета:", closet.Depth)
 	fmt.Println("\tНазвание предмета:", table.Name, "\nВес предмета:", table.Weight, "\nЦвет предмета:", table.Colour, "\nМатериал:", table.Material, "\nДлина предмета:", table.Height, "\nШирина предмета:", table.Width, "\nГлубина предмета:", table.Depth)
-	fmt.Println("\tНазвание предмета:", chair.Name, "\nВес предмета:", armchair.Weight, "\nЦвет предмета:", chair.Colour, "\nМатериал:", chair.Material, "\nДлина предмета:", chair.Height, "\nШирина предмета:", chair.Width, "\nГлубина предмета:", chair.Depth)
+	fmt.Println("\tНазвание предмета:", chair.Name, "\nВес предмета:", chair.Weight, "\nЦвет предмета:", chair.Colour, "\nМатериал:", chair.Material, "\nДлина предмета:", chair.Height, "\nШирина предмета:", chair.Width, "\nГлубина предмета:", chair.Depth)
 	fmt.Println("\tНазвание предмета:", dresser.Name, "\nВес предмета:", dresser.Weight, "\nЦвет предмета:", dresser.Colour, "\nМатериал:", dresser.Material, "\nДлина предмета:", dresser.Height, "\nШирина предмета:", dresser.Width, "\nГлубина предмета:", dresser.Depth)
 	fmt.Println("\tНазвание предмета:", sofa.Name, "\nВес предмета:", sofa.Weight, "\nЦвет предмета:", sofa.Colour, "\nМатериал:", sofa.Material, "\nДлина предмета:", sofa.Height, "\nШирина предмета:", sofa.Width, "\nГлубина предмета:", sofa.Depth)
-	fmt.Println("\tНазвание предмета:", chandelier.Name, "\nВес предмета:", chandelier.Weight, "\nЦвет предмета:", chandelier.Colour, "\nМатериал:", chandelier.Material, "\nДлина предмета:", chandelier.Height, "\nШирина предмета:", chandelier.Width, "\nГлубина предмета:", chandelier.Depth)
 	return Furniture{}
 }
 func PrintBedroomFurniture() Furniture {
