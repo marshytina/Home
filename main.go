@@ -1,7 +1,9 @@
 package main
 
-import "house/my"
+import (
+	"house/house"
+)
 
 func main() {
-	my.CreateHouse()
+	house.CreateHouse()
 }
